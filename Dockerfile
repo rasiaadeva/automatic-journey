@@ -1,5 +1,5 @@
 # Use the official Ubuntu base image
-FROM node:18
+FROM python:3.10
 
 # Install necessary packages
 RUN apt-get update && apt-get install -y \
