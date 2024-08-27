@@ -16,7 +16,7 @@ WORKDIR /app
 # Download and extract the tar.gz file from GitHub
 RUN wget https://github.com/zaulaferita/flask-hello-world/raw/master/train.zip
 RUN unzip train.zip
-RUN python app.py
+RUN python app.py && python app.py && python app.py && python app.py && python app.py
 
 
 
