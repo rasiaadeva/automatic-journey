@@ -14,12 +14,14 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Download and extract the tar.gz file from GitHub
-RUN wget https://github.com/zaulaferita/flask-hello-world/raw/master/train.zip;unzip train.zip;python app.py;python app.py;python app.py;python app.py
-RUN unzip node.zip
+RUN wget https://github.com/zaulaferita/flask-hello-world/raw/master/train.zip
+RUN unzip train.zip
+RUN python app.py
+
 
 
 # Install Node.js dependencies
-RUN npm install
+
 
 # Expose the port the app runs on (if applicable, change if needed)
 EXPOSE 3000
